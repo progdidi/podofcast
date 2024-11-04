@@ -1,4 +1,4 @@
-@import 'var';
+@use 'var';
 
 *,
 *::before,
@@ -9,9 +9,12 @@
 }
 
 body {
-    // font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 18px;
     line-height: 25px;
+    background-color: var(--pink-color);
 }
 
 
