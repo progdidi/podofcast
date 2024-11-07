@@ -1,0 +1,112 @@
+.slogan {
+    background-color: #fff;
+    padding: 140px 0;
+    position: relative;
+    &::before, &::after {
+        position: absolute;
+        content: '';        
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+    }
+
+    &::before {
+        background-image: url('../../images/slogan/before.svg');
+        top: -75px;
+    }
+
+    &::after {
+        background-image: url('../../images/slogan/after.svg');
+        bottom: -75px;
+    }
+
+    .slogan__title {
+        text-align: center;        
+        max-width: 735px;
+        margin: 0 auto;
+        margin-bottom: 120px;
+    }
+    .slogan__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        .slogan__item {
+            max-width: 472px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .slogan__item-img {
+                margin-bottom: 40px;
+            }
+            .slogan__item-text {
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }    
+    
+    .slogan-quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--pink-color);
+        padding: 40px;
+        position: relative;
+        &::before, &::after {
+            position: absolute;
+            content: '';  
+            background-repeat: no-repeat;
+        }
+        &::before {
+            width: 150px;
+            height: 150px;
+            left: -60px;
+            bottom: 50px;
+            background-image: url('../../images/slogan/quote-before.svg');
+        }
+
+        &::after {
+            width: 200px;
+            height: 200px;
+            right: -60px;
+            top: -80px;
+            background-image: url('../../images/slogan/quote-after.svg');
+
+        }
+        .slogan-quote__img {
+            margin-bottom: 40px;
+        }
+        .slogan-quote__text {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            text-align: center;            
+            max-width: 70%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        .slogan-quote__author {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+        }
+        .slogan-quote__author-img {
+        }
+        .slogan-quote__author-name {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+        }
+        .slogan-quote__author-job {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+        }
+    }
+    
+}
