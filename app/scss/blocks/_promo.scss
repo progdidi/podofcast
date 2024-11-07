@@ -1,5 +1,5 @@
 .promo {
-    padding: 40px 0;
+    padding: 40px 0 140px 0;
     background-image: url('../../images/promo/bg\ stars.svg');
     background-repeat: no-repeat;
     background-size: auto;
@@ -34,9 +34,61 @@
             box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
             background: #000;
             color: #fff;
+            margin-bottom: 120px;
         }
     }
     
 }
+
+.top {
+    .top-slider {
+        margin-bottom: 120px;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .top-slider__items {
+        display: flex;
+        gap: 20px;
+    }
+    .top-slider__item {
+        border-radius: 12px;
+        width: 373px;
+        height: 373px;
+        padding: 20px;
+        background: #000;
+        &-img {
+    
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 140%;
+            letter-spacing: -0.08em;
+            color: #81adc8;
+    
+        }
+    }
+}
+
+
+.support {
+    .support__inner {
+        padding: 20px 0;
+        border-top: 1.5px solid #4d4d4d;
+        border-bottom: 1.5px solid #4d4d4d;
+        
+    }
+    .support__text {
+    }
+    .support__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .support__item-img {
+        display: block;
+    }
+}
+
 
 
