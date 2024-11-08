@@ -33,6 +33,15 @@ button{
     margin: 0 auto;
 }
 
+.tag {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
 .black-btn {
     display: block;
     font-weight: 700;
