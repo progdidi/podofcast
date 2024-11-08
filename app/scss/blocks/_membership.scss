@@ -1,0 +1,50 @@
+.membership {
+    padding: 140px 0;
+    background-color: #fff;
+    .membership__title {
+        &::before {
+            background-image: url('../../images/membership/before.svg');
+            right: 0;
+            top: 0;
+            width: 240px;
+            height: 240px;
+        }
+    }
+    .membership__subtitle {
+        margin-bottom: 100px;
+    }
+    .membership__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 80px;
+        margin-bottom: 100px;
+    }
+    .membership__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .membership__item-img {
+            margin-bottom: 30px;
+        }
+        .membership__item-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        .membership__item-text {
+            font-weight: 500;
+        }
+    }
+    
+    .membership__button {
+        width: 170px;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    
+}

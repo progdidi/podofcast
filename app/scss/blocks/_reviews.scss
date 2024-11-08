@@ -3,33 +3,64 @@
     padding-top: 140px;
     padding-bottom: 100px;
     .reviews__title {
+        &::before {
+            width: 150px;
+            height: 150px;
+            background-image: url('../../images/reviews/before.svg');
+            left: 0;
+            top: 0;
+        }
     }
     .reviews__subtitle {
+
+        margin-bottom: 100px;
     }
     .reviews__items {
         display: flex;
         gap: 20px;
+        margin-bottom: 60px;
     }
     .reviews-item {
         background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        .reviews-item__img {
+            margin-bottom: 32px;
+        }
+        .reviews-item__text {
+            font-weight: 500;
+            font-size: 22px;
+            margin-bottom: 32px;
+        }
+        .reviews-item__author {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .reviews-item__author-img {
+            }
+            .reviews-item__author-name {
+            }
+            .reviews-item__author-platform-img {
+            }
+            .reviews-item__author-platform {
+            }
+        }
+        
     }
-    .reviews-item__img {
-    }
-    .reviews-item__text {
-    }
-    .reviews-item__author {
-    }
-    .reviews-item__author-img {
-    }
-    .reviews-item__author-name {
-    }
-    .reviews-item__author-platform-img {
-    }
-    .reviews-item__author-platform {
-    }
+    
     .reviews-slider__buttons {
+        display: flex;
+        gap: 20px;
     }
     .reviews-slider__btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #CD4631;
+
     }
     .reviews-slider__btn-img {
     }
