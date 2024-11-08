@@ -8,25 +8,52 @@
     .sponsor__items {
     }
     .sponsor-item {
+        .sponsor-item__main {
+            border: 1.50px solid #000;
+            border-radius: 8px;
+            padding: 60px 40px 30px 40px;
+            .sponsor-item__title {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 140%;
+                letter-spacing: -0.02em;
+                margin-bottom: 20px;
+            }
+            .sponsor__item-descr {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 160%;
+                color: var(--gray-color);
+            }
+            .sponsor__item-buy {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .sponsor__item-btn {
+            }
+            .sponsor__item-price {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 140%;
+                letter-spacing: -0.02em;
+                color: var(--red-color);
+            }
+        }
+        
+        .sponsor-item__include {
+            padding: 40px;
+            .sponsor-item__list {
+                font-weight: 500;
+            }
+            .sponsor-item__list-descr {
+                margin-bottom: 20px;
+            }
+            .sponsor-item__list-item {
+                margin-bottom: 10px;
+            }
+        }
+        
     }
-    .sponsor-item__main {
-    }
-    .sponsor-item__title {
-    }
-    .sponsor__item-descr {
-    }
-    .sponsor__item-buy {
-    }
-    .sponsor__item-btn {
-    }
-    .sponsor__item-price {
-    }
-    .sponsor-item__descr {
-    }
-    .sponsor-item__list {
-    }
-    .sponsor-item__list-descr {
-    }
-    .sponsor-item__list-item {
-    }
+    
 }
