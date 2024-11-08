@@ -57,3 +57,18 @@ button{
     text-align: center;
     color: #4d4d4d;
 }
+
+.section {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';        
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-repeat: no-repeat;
+        background-image: url('../../images/section-after.svg');
+        bottom: -75px;
+    }
+}
