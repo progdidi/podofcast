@@ -1,0 +1,93 @@
+.episodes {
+    padding: 140px 0;
+    .episodes__title {
+    }
+    .episodes__subtitle {
+        margin-bottom: 100px;
+    }
+    .episodes__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 100px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            right: -100px;
+            top: -100;
+            width: 240px;
+            height: 240px;
+            background-image: url('../../images/episodes/before.svg');
+        }
+    }
+    .episodes-item {
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 16px;
+        border: 2px solid #000;
+        border-radius: 12px;
+        &__img {
+            display: block;
+            width: 166px;
+            height: 166px;
+        }
+        &__num {
+        }
+        &__descr {
+            max-width: 60%;
+        }
+        &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+
+        }
+        &__descr {
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--gray-color);
+        }
+        .episodes-item__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .episodes-item__tags {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            .episodes-item__tag {
+                font-weight: 500;
+                font-size: 12px;
+                color: var(--gray-color);
+                border: 1px solid var(--gray-color);
+                border-radius: 4px;
+                padding: 6px 12px;
+            }
+        }
+        
+        .episodes-item__hosted {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &-text {
+                font-weight: 700;
+                font-size: 12px;
+                color: var(--gray-color);
+            }
+            &-img {
+            }
+        }
+        
+    }
+    
+    .episodes__btn {
+        width: 253px;
+    }
+}
