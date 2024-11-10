@@ -1,24 +1,37 @@
 .app {
     background-color: var(--blue-color);
+    padding: 140px 0;
     .app__title {
+        max-width: 486px;
+        margin-bottom: 28px;
+        margin: 0 auto;
     }
     .app__subtitle {
+        margin-bottom: 140px;
     }
     .app__button {
-    }
-    .section-btn {
-    }
-    .black-btn {
+        margin-bottom: 24px;
     }
     .platforms {
-    }
-    .platforms__text {
-    }
-    .platforms__items {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__text {
+            font-weight: 500;
+            color: var(--gray-color);
+            margin-bottom: 10px;
+
+        }
+        &__items {
+            display: flex;
+            gap: 20px;
+            .platforms__item {
+                width: 24px;
+                height: 24px;
+            }
+        }
     }
-    .platforms__item {
-    }
-    .platforms__item-img {
-    }
+    
+    
 }
