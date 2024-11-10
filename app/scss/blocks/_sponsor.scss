@@ -4,14 +4,19 @@
     &__title {
     }
     &__subtitle {
+        margin-bottom: 100px;
     }
     .sponsor__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
     }
     .sponsor-item {
         .sponsor-item__main {
             border: 1.50px solid #000;
             border-radius: 8px;
             padding: 60px 40px 30px 40px;
+            margin-bottom: 20px;
             .sponsor-item__title {
                 font-weight: 700;
                 font-size: 36px;
@@ -24,6 +29,7 @@
                 font-size: 14px;
                 line-height: 160%;
                 color: var(--gray-color);
+                margin-bottom: 90px;
             }
             .sponsor__item-buy {
                 display: flex;
@@ -31,6 +37,7 @@
                 align-items: center;
             }
             .sponsor__item-btn {
+                width: 160px;
             }
             .sponsor__item-price {
                 font-weight: 700;
@@ -43,6 +50,8 @@
         
         .sponsor-item__include {
             padding: 40px;
+            border: 1.50px solid #000;
+            border-radius: 8px;
             .sponsor-item__list {
                 font-weight: 500;
             }

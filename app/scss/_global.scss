@@ -33,6 +33,25 @@ button{
     margin: 0 auto;
 }
 
+.page-promo {
+    &__title {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        span {
+            color: var(--red-color);
+        }
+    }
+
+    &__descr {
+        font-weight: 500;
+        color: var(--gray-color);
+        text-align: center;
+    }
+}
+
 .tag {
     font-weight: 500;
     font-size: 12px;
@@ -75,7 +94,7 @@ button{
 }
 
 .section-btn {
-    padding: 20px 0;
+    padding: 20px 36px;
     margin: 0 auto;
     box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.25);
     text-align: center;
